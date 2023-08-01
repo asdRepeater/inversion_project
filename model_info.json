@@ -1,0 +1,207 @@
+{
+ "RF_2022010408-2022010410": {
+  "model_name": "RF_2022010408-2022010410",
+  "model_algorithm": "RF",
+  "model_spacetime": "否",
+  "model_parameters": {
+   "max_depth": null,
+   "n_estimators": 100
+  },
+  "model_research_range": {
+   "空间": "葵花wh坐标范围",
+   "时间": [
+    "2022-01-04 08:00:00",
+    "2022-01-04 10:00:00"
+   ]
+  },
+  "model_var": [
+   "PRS",
+   "RH",
+   "Y"
+  ],
+  "model_accuracy": [
+   "R_squared: 0.7641385404841459"
+  ]
+ },
+ "ST-RF_notime": {
+  "model_name": "ST-RF_notime",
+  "model_algorithm": "ST-RF",
+  "model_spacetime": "是",
+  "model_parameters": {
+   "max_depth": null,
+   "n_estimators": 100
+  },
+  "model_research_range": {
+   "空间": "葵花wh坐标范围",
+   "时间": [
+    "2022-01-04 08:00:00",
+    "2022-01-04 12:00:00"
+   ]
+  },
+  "model_var": [
+   "PRS",
+   "RH",
+   "Y_t",
+   "Y_s",
+   "Y_dis",
+   "Y"
+  ],
+  "model_accuracy": [
+   "R_squared: 0.9951343115679561"
+  ]
+ },
+ "GWR_notime": {
+  "model_name": "GWR_notime",
+  "model_algorithm": "GWR",
+  "model_spacetime": "否",
+  "model_parameters": {
+   "bandwidth": 0.8,
+   "kernel": "gaussian",
+   "fixed": true
+  },
+  "model_research_range": {
+   "空间": "葵花wh坐标范围",
+   "时间": [
+    "2022-01-04 08:00:00",
+    "2022-01-04 12:00:00"
+   ]
+  },
+  "model_var": [
+   "纬度",
+   "经度",
+   "PRS",
+   "RH",
+   "Y"
+  ],
+  "model_accuracy": [
+   "R_squared: 0.025946681643821523"
+  ]
+ },
+ "GTWR_notime": {
+  "model_name": "GTWR_notime",
+  "model_algorithm": "GTWR",
+  "model_spacetime": "否",
+  "model_parameters": {
+   "bandwidth": 0.8,
+   "kernel": "gaussian",
+   "fixed": true
+  },
+  "model_research_range": {
+   "空间": "葵花wh坐标范围",
+   "时间": [
+    "2022-01-04 08:00:00",
+    "2022-01-04 12:00:00"
+   ]
+  },
+  "model_var": [
+   "时间",
+   "纬度",
+   "经度",
+   "PRS",
+   "RH",
+   "Y"
+  ],
+  "model_accuracy": [
+   "R_squared: 0.027068789850178354"
+  ]
+ },
+ "BPNN_notime": {
+  "model_name": "BPNN_notime",
+  "model_algorithm": "BPNN",
+  "model_spacetime": "否",
+  "model_parameters": {
+   "random_state": 10,
+   "learning_rate_init": 0.1
+  },
+  "model_research_range": {
+   "空间": "葵花wh坐标范围",
+   "时间": [
+    "2022-01-04 08:00:00",
+    "2022-01-04 12:00:00"
+   ]
+  },
+  "model_var": [
+   "PRS",
+   "RH",
+   "Y"
+  ],
+  "model_accuracy": [
+   "R_squared: 0.09957550132096527"
+  ]
+ },
+ "MTL_notime": {
+  "model_name": "MTL_notime",
+  "model_algorithm": "MTL",
+  "model_spacetime": "否",
+  "model_parameters": {
+   "learning_rate": 0.01,
+   "batch_size": 64,
+   "targetNum": 2
+  },
+  "model_research_range": {
+   "空间": "葵花wh坐标范围",
+   "时间": [
+    "2022-01-04 08:00:00",
+    "2022-01-04 12:00:00"
+   ]
+  },
+  "model_var": [
+   "PRS",
+   "RH",
+   "Y_1",
+   "Y_2"
+  ],
+  "model_accuracy": [
+   "R_squared(y1): 0.006584321247981584",
+   "R_squared(y2): 0.006560660846051558"
+  ]
+ },
+ "阿萨德1": {
+  "model_name": "阿萨德1",
+  "model_algorithm": "RF",
+  "model_spacetime": "否",
+  "model_parameters": {
+   "max_depth": null,
+   "n_estimators": 100
+  },
+  "model_research_range": {
+   "空间": "葵花wh坐标范围",
+   "时间": [
+    "2022-01-04 08:00:00",
+    "2022-01-04 12:00:00"
+   ]
+  },
+  "model_var": [
+   "PRS",
+   "RH",
+   "Y"
+  ],
+  "model_accuracy": [
+   "R_squared: 0.6598977098708048"
+  ]
+ },
+ "adasdasd": {
+  "model_name": "adasdasd",
+  "model_algorithm": "RF",
+  "model_spacetime": "否",
+  "model_parameters": {
+   "max_depth": null,
+   "n_estimators": 100
+  },
+  "model_research_range": {
+   "空间": "葵花wh坐标范围",
+   "时间": [
+    "2022-01-04 08:00:00",
+    "2022-01-04 12:00:00"
+   ]
+  },
+  "model_var": [
+   "PRS",
+   "RH",
+   "Y"
+  ],
+  "model_accuracy": [
+   "R_squared: 0.662753168198719"
+  ]
+ }
+}

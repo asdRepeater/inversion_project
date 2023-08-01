@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<predict_space>G:/software_development/inversion_project/import_data/葵花wh坐标范围.tif</predict_space>
+	<predict_time>['2022010408', '2022010412']</predict_time>
+	<model>G:\software_development\inversion_project\models\RF_2022010408-2022010410.pkl</model>
+	<x_variables>
+		<var name="PRS">G:/software_development/inversion_project/import_data/2_prs</var>
+		<var name="RH">G:/software_development/inversion_project/import_data/2_rh</var>
+	</x_variables>
+	<save_tmp_csv save_state="False"></save_tmp_csv>
+	<export_type>tif</export_type>
+	<export_result>G:/software_development/inversion_project/export_data/tif</export_result>
+</root>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<train>
+		<model seq="0">随机森林(RF)</model>
+		<model seq="1">时空随机森林(ST-RF)</model>
+		<model seq="2">自适应提升算法(AdaBoost)</model>
+		<model seq="3">时空自适应提升算法(ST-AdaBoost)</model>
+		<model seq="4">梯度提升决策树(GBDT)</model>
+		<model seq="5">时空梯度提升决策树(ST-GBDT)</model>
+		<model seq="6">极端梯度提升树(XGBoost)</model>
+		<model seq="7">时空极端梯度提升树(ST-XGBoost)</model>
+		<model seq="8">轻量梯度提升机(LightGBM)</model>
+		<model seq="9">时空轻量梯度提升机(ST-LightGBM)</model>
+		<model seq="10">广义回归神经网络(GRNN)</model>
+		<model seq="11">时空广义回归神经网络(ST-GRNN)</model>
+		<model seq="12">线性回归(LinearRegression)</model>
+		<model seq="13">时空线性回归(ST-LinearRegression)</model>
+		<model seq="14">深度置信网络(DBN)</model>
+		<model seq="15">地理智能深度置信网络(Geoi-DBN)</model>
+		<model seq="16">多任务学习模型(MTL)</model>
+		<model seq="17">时空多任务学习模型(ST-MTL)</model>
+		<model seq="18">多层感知机(BPNN)</model>
+		<model seq="19">时空多层感知机(ST-NN)</model>
+		<model seq="20">地理加权回归(GWR)</model>
+		<model seq="21">时空地理加权回归(GTWR)</model>
+		<model seq="22">时空地理加权广义回归神经网络(GTWGRNN)</model>
+		<model seq="23">全局局部时空地理加权神经网络(GC-GTWNN)</model>
+	</train>
+	<predict>
+		<model seq="0">RF_2022010408-2022010410</model>
+		<model seq="1">ST-RF_notime</model>
+		<model seq="2">GWR_notime</model>
+		<model seq="3">GTWR_notime</model>
+		<model seq="4">BPNN_notime</model>
+		<model seq="5">MTL_notime</model>
+	</predict>
+</root>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<research_space>G:/software_development/inversion_project/import_data/葵花wh坐标范围.tif</research_space>
+	<research_time>['2022010408', '2022010412']</research_time>
+	<y_label>['G:/software_development/inversion_project/import_data/2_pm']</y_label>
+	<save_tmp_csv save_state="False"></save_tmp_csv>
+	<x_variables>
+		<var name="PRS">G:/software_development/inversion_project/import_data/2_prs</var>
+		<var name="RH">G:/software_development/inversion_project/import_data/2_rh</var>
+	</x_variables>
+	<model ID="RF" cn_name="随机森林" spacetime="否">
+		<parameter name="max_depth">None</parameter>
+		<parameter name="n_estimators">100</parameter>
+	</model>
+	<export_model>G:/software_development/inversion_project/models/adasdasd.pkl</export_model>
+	<test_rate>0.1</test_rate>
+	<random_state>2</random_state>
+	<model_test save_state="True">G:/software_development/inversion_project/export_data/阿萨德大所多.jpg</model_test>
+</root>

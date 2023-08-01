@@ -1,0 +1,44 @@
+<RCC>
+  <qresource prefix="main_pane">
+    <file>images/main_pane_icon.png</file>
+    <file>images/aboutus.png</file>
+    <file>images/model_predict.png</file>
+    <file>images/model_train.png</file>
+    <file>images/main_pane.jpg</file>
+  </qresource>
+  <qresource prefix="welcome_pane">
+    <file>images/main_pane_icon.png</file>
+    <file>images/机器学习 (1).png</file>
+    <file>images/机器学习.png</file>
+    <file>images/learn 机器学习 (1).png</file>
+    <file>images/波点面板.png</file>
+    <file>images/learn 机器学习.png</file>
+    <file>images/人机交互.png</file>
+    <file>images/时空-空间.png</file>
+    <file>images/星地链接.png</file>
+    <file>images/aboutus3.png</file>
+    <file>images/aboutus2.png</file>
+    <file>images/a0791c315763541d44fe205ef1ae5f2b.webp</file>
+    <file>images/background_img1.jpg</file>
+    <file>images/background2.jpg</file>
+    <file>images/background3.jpg</file>
+    <file>images/background4.png</file>
+  </qresource>
+  <qresource prefix="preprocessing_pane">
+    <file>images/preprocessing_pane_2.png</file>
+    <file>images/preprocessing_pane.png</file>
+  </qresource>
+  <qresource prefix="train_pane">
+    <file>images/add_variable.png</file>
+    <file>images/model_train.png</file>
+  </qresource>
+  <qresource prefix="predict_pane">
+    <file>images/model_predict.png</file>
+  </qresource>
+  <qresource prefix="log_pane">
+    <file>images/log_pane.png</file>
+  </qresource>
+  <qresource prefix="visualization_pane">
+    <file>images/visualization_pane.png</file>
+  </qresource>
+</RCC>

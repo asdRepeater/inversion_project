@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This is list of models -->
+<algorithm>
+    <model ID="RF" cn_name="随机森林" spacetime="否">
+        <parameter name="max_depth">None</parameter>
+        <parameter name="n_estimators">100</parameter>
+    </model>
+    <model ID="ST-RF" cn_name="时空随机森林" spacetime="是">
+        <parameter name="max_depth">None</parameter>
+        <parameter name="n_estimators">100</parameter>
+    </model>
+    <model ID="AdaBoost" cn_name="自适应提升算法" spacetime="否">
+        <parameter name="max_depth">50</parameter>
+        <parameter name="learning_rate">0.8</parameter>
+    </model>
+    <model ID="ST-AdaBoost" cn_name="时空自适应提升算法" spacetime="是">
+        <parameter name="max_depth">50</parameter>
+        <parameter name="learning_rate">0.8</parameter>
+    </model>
+    <model ID="GBDT" cn_name="梯度提升决策树" spacetime="否">
+        <parameter name="loss">ls</parameter>
+        <parameter name="n_estimators">500</parameter>
+        <parameter name="max_depth">50</parameter>
+        <parameter name="learning_rate">0.1</parameter>
+        <parameter name="subsample">0.8</parameter>
+    </model>
+    <model ID="ST-GBDT" cn_name="时空梯度提升决策树" spacetime="是">
+        <parameter name="loss">ls</parameter>
+        <parameter name="n_estimators">500</parameter>
+        <parameter name="max_depth">50</parameter>
+        <parameter name="learning_rate">0.1</parameter>
+        <parameter name="subsample">0.8</parameter>
+    </model>
+    <model ID="XGBoost" cn_name="极端梯度提升树" spacetime="否">
+        <parameter name="max_depth">35</parameter>
+        <parameter name="learning_rate">0.09</parameter>
+        <parameter name="n_estimators">500</parameter>
+        <parameter name="objective">reg:gamma</parameter>
+    </model>
+    <model ID="ST-XGBoost" cn_name="时空极端梯度提升树" spacetime="是">
+        <parameter name="max_depth">35</parameter>
+        <parameter name="learning_rate">0.09</parameter>
+        <parameter name="n_estimators">500</parameter>
+        <parameter name="objective">reg:gamma</parameter>
+    </model>
+    <model ID="LightGBM" cn_name="轻量梯度提升机" spacetime="否">
+        <parameter name="max_depth">9</parameter>
+        <parameter name="learning_rate">0.15</parameter>
+        <parameter name="n_estimators">2000</parameter>
+        <parameter name="boosting_type">gbdt</parameter>
+        <parameter name="objective">regression</parameter>
+        <parameter name="num_leaves">500</parameter>
+    </model>
+    <model ID="ST-LightGBM" cn_name="时空轻量梯度提升机" spacetime="是">
+        <parameter name="max_depth">9</parameter>
+        <parameter name="learning_rate">0.15</parameter>
+        <parameter name="n_estimators">2000</parameter>
+        <parameter name="boosting_type">gbdt</parameter>
+        <parameter name="objective">regression</parameter>
+        <parameter name="num_leaves">500</parameter>
+    </model>
+    <model ID="GRNN" cn_name="广义回归神经网络" spacetime="否">
+        <parameter name="std">0.037</parameter>
+    </model>
+    <model ID="ST-GRNN" cn_name="时空广义回归神经网络" spacetime="是">
+        <parameter name="std">0.037</parameter>
+    </model>
+    <model ID="LinearRegression" cn_name="线性回归" spacetime="否">
+        <parameter name="fit_intercept">True</parameter>
+        <parameter name="positive">False</parameter>
+    </model>
+    <model ID="ST-LinearRegression" cn_name="时空线性回归" spacetime="是">
+        <parameter name="fit_intercept">True</parameter>
+        <parameter name="positive">False</parameter>
+    </model>
+    <model ID="DBN" cn_name="深度置信网络" spacetime="否">
+        <parameter name="learning_rate">0.0003</parameter>
+        <parameter name="epochs">3000</parameter>
+        <parameter name="rbm_opts_batchsize">128</parameter>
+        <parameter name="neuralNum">[15, 15]</parameter>
+    </model>
+    <model ID="Geoi-DBN" cn_name="地理智能深度置信网络" spacetime="是">
+        <parameter name="learning_rate">0.0003</parameter>
+        <parameter name="epochs">3000</parameter>
+        <parameter name="rbm_opts_batchsize">128</parameter>
+        <parameter name="neuralNum">[15, 15]</parameter>
+    </model>
+    <model ID="MTL" cn_name="多任务学习模型" spacetime="否">
+        <parameter name="learning_rate">0.01</parameter>
+        <parameter name="batch_size">64</parameter>
+        <parameter name="targetNum">2</parameter>
+    </model>
+    <model ID="ST-MTL" cn_name="时空多任务学习模型" spacetime="是">
+        <parameter name="learning_rate">0.01</parameter>
+        <parameter name="batch_size">64</parameter>
+        <parameter name="targetNum">2</parameter>
+    </model>
+    <model ID="BPNN" cn_name="多层感知机" spacetime="否">
+        <parameter name="random_state">10</parameter>
+        <parameter name="learning_rate_init">0.1</parameter>
+    </model>
+    <model ID="ST-NN" cn_name="时空多层感知机" spacetime="是">
+        <parameter name="random_state">10</parameter>
+        <parameter name="learning_rate_init">0.1</parameter>
+    </model>
+    <model ID="GWR" cn_name="地理加权回归" spacetime="否">
+        <parameter name="bandwidth">0.8</parameter>
+        <parameter name="kernel">gaussian</parameter>
+        <parameter name="fixed">True</parameter>
+    </model>
+    <model ID="GTWR" cn_name="时空地理加权回归" spacetime="否">
+        <parameter name="bandwidth">0.8</parameter>
+        <parameter name="kernel">gaussian</parameter>
+        <parameter name="fixed">True</parameter>
+    </model>
+    <model ID="GTWGRNN" cn_name="时空地理加权广义回归神经网络" spacetime="否">
+        <parameter name="bandWidth">4</parameter>
+        <parameter name="bLambda">3</parameter>
+        <parameter name="spread">0.1</parameter>
+    </model>
+    <model ID="GC-GTWNN" cn_name="全局局部时空地理加权神经网络" spacetime="否">
+        <parameter name="bandWidth">4</parameter>
+        <parameter name="bLambda">3</parameter>
+        <parameter name="neuralNum">[15,15]</parameter>
+    </model>
+</algorithm>
